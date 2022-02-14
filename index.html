@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Script for GAME OF LIFE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora:700|PT+Sans:400,400i,700'><link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <section class="showcase">
+    <header id="row">
+        <h2 class="logo">Game of life</h2>
+        <div class="toggle"></div>
+    </header>
+      <video src="CONWAY-zucconi_wg_1080p.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Imagine a game </h2>
+        <h3>that requires no player</h3>
+        <p>Fifty years on, the mathematician’s best known creation
+  confirms that “uncertainty is the only certainty.”</p>
+        <a href="game.html">Explore</a>
+        <a href="art.html">Generate <span style="color:#f0932b;">NFT</span></a>
+      </div>
+      <ul class="social">
+        <li><a href="https://youtu.be/0wAYZcqSS60" target="_blank"><img src="https://img.icons8.com/material-outlined/48/000000/youtube-play--v1.png"></a></li>
+        <li><a href="https://twitter.com/search?q=Conway%27sGameOfLife&src=typed_query&f=live" target="_blank"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+        <li><a href="https://en.wikipedia.org/wiki/John_Horton_Conway" target="_blank"><img src="https://img.icons8.com/ios/50/000000/wikipedia.png"></a></li>
+      </ul>
+    </section>
+        <div class="nav">
+            <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">About</a></li>
+            <!-- <li><a href="#">How it works</a></li> -->
+            <li><a href="https://conwaylife.appspot.com/library" target="_blank">Patterns</a></li>
+            <li><a href="#">Story</a></li>
+            </ul>
+        </div>
+    <script>
+      const menuToggle = document.querySelector('.toggle');
+      const showcase = document.querySelector('.showcase');
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+     })
+    </script>
+            <section class="empty"></section>
+            <section class="story">
+      <div class="container out">
+          <h1>The Lasting Lessons of John Conway’s Game of Life</h1>
+          <p class="fade">In March of 1970, Martin Gardner opened a letter jammed with ideas for his Mathematical Games column in Scientific American. Sent by John Horton Conway, then a mathematician at the University of Cambridge, the letter ran 12 pages, typed hunt-and-peck style.</p> <br>
+          <p class="fade">Page 9 began with the heading “The game of life.” It described an elegant mathematical model of computation — a cellular automaton, a little machine, of sorts, with groups of cells that evolve from iteration to iteration, as a clock advances from one second to the next.</p> <br>
+          <p class="fade">Dr. Conway, who died in April 2020, having spent the latter part of his career at Princeton, sometimes called Life a “no-player, never-ending game.” Mr. Gardner called it a “fantastic solitaire pastime.”</p>
+          <h2 class="fade">Keep scrolling down</h2>
+          <p class="fade">The game was simple: Place any configuration of cells on a grid, then watch what transpires according to three rules that dictate how the system plays out.</p> <br>
+          <p class="fade">Birth rule: An empty, or “dead,” cell with precisely three “live” neighbors (full cells) becomes live.<br><br>Death rule: A live cell with zero or one neighbors dies of isolation; a live cell with four or more neighbors dies of overcrowding.<br><br>Survival rule: A live cell with two or three neighbors remains alive.<br><br>With each iteration, some cells live, some die and “Life-forms” evolve, one generation to the next.
+        </p>
+        <h2 class="fade">Keep scrolling down</h2>
+          <p class="fade">Among the first creatures to emerge was the glider — a five-celled organism that moved across the grid with a diagonal wiggle and proved handy for transmitting information. It was discovered by a member of Dr. Conway’s research team, Richard Guy, in Cambridge, England. The glider gun, producing a steady stream of gliders, was discovered soon after by Bill Gosper, then at the Massachusetts Institute of Technology.</p> <br>
+          <p class="fade">“Because of its analogies with the rise, fall and alterations of a society of living organisms, it belongs to a growing class of what are called ‘simulation games,’” Mr. Gardner wrote when he introduced Life to the world 50 years ago with his October 1970 column.</p>
+        <h2 class="fade">Keep scrolling down</h2>
+          <p class="fade">Life swiftly eclipsed Dr. Conway’s many other mathematical accomplishments, and he came to regard his missive to Mr. Gardner as “the fatal letter.”</p> <br>
+          <p class="fade">The Game of Life motivated the use of cellular automata in the rich field of complexity science, with simulations modeling everything from ants to traffic, clouds to galaxies. More trivially, the game attracted a cult of “Lifenthusiasts,” programmers who spent a lot of time hacking Life — that is, constructing patterns in hopes of spotting new Life-forms.</p> <br>
+          <p class="fade">To mark the 50th anniversary, the ConwayLife.com community — which hosts the LifeWiki, with more than 2,000 articles — created an Exploratorium, a large, explorable stamp-collection pattern.</p>
+          <div class="flowcontent flow">
+            <div class="imageholder img1"></div>
+            <div class="caption">
+              <h4>"John Horton Conway, investigating <br>“Life” in 1974."</h4>
+              <p>Credit: Kelvin Brodie/The Sun News Syndication</p>
+            </div>
+          </div>
+          <div class="flowcontent flow">
+            <div class="imageholder img2"></div>
+            <div class="caption right">
+              <h4>"Dr. Conway in his Princeton office in 1993."</h4>
+              <p>Credit: Dith Pran/The New York Times</p>
+            </div>
+          </div>
+          <h2 class="fade">Keep scrolling down</h2>
+          <p class="fade">Patterns that didn’t change one generation to the next, Dr. Conway called still lifes — such as the four-celled block, the six-celled beehive or the eight-celled pond. Patterns that took a long time to stabilize, he called methuselahs.</p> <br>
+          <p class="fade">The tree of Life also includes oscillators, such as the blinker, and spaceships of various sizes (the glider being the smallest).</p>
+          <div class="flowcontent flow">
+            <video autoplay="autoplay" poster="https://media.giphy.com/media/fWgfSuvEh61nUcgsbg/giphy.gif" loop="" muted="">
+              <source src="https://media.giphy.com/media/fWgfSuvEh61nUcgsbg/giphy.gif" type="video/mp4"/>
+            </video>
+            <div class="caption">
+              <h2>Are We Living in a Simulation?</h2>
+              <p>What do you think?</p>
+            </div>
+          </div>
+          <h2 class="fade">After hours of computation</h2>
+          <p class="fade">In 2018, there was a much-celebrated discovery of a special kind of spaceship, the first elementary knightship, named Sir Robin. Made of hundreds of cells, it moves two cells forward and one sideways every six generations. It was discovered by Adam P. Goucher, a British algorithmist, building on an earlier partial find by Tomas Rokicki, a developer of Golly, a program for exploring the distant future of large Life patterns.</p> <br>
+          <p class="fade">And the hunting party continues. In September, Pavel Grankovskiy, of Russia, discovered the Speed Demonoid spaceship. In December, John Winston Garth, of Alabama, discovered the Doo-dah spaceship. Both are contenders for pattern of the year, in what has been a good year for new Life discoveries.</p> <br>
+          <p class="fade">Life ultimately became way too popular for Dr. Conway’s liking. Whenever the subject came up, he would bellow, “I hate Life!” But in his final years he learned to love Life again. He narrated a documentary, with the working title “Thoughts on Life,” by the Brooklyn-based mathematician and filmmaker Will Cavendish, exploring the deterministic Game of Life versus the Free Will Theorem, a result Dr. Conway proved with his Princeton colleague Simon Kochen.<br><br>“I used to go around saying, ‘I hate Life,’” Dr. Conway says in the film. “But then I was giving a lecture somewhere, and I was introduced as ‘John Conway, Creator of Life.’ And I thought, ‘Oh, that’s quite a nice way to be known.’ So I stopped saying ‘I hate Life’ after that.” </p> <br> <br>
+          <h2 class="fade">Current research based on "Cellular Automata"</h2>
+          <p class="fade">Now coming back to our more human Endeavors. Wouldn't it be nice if you just leave a bunch of these components on a table, put in some simple rules, and come back in 10 hours and have it assembled itself? This could completely revolutionize IKEA's furniture model. Maybe we should draw inspiration from cellular automata and totally rethink engineering and design. Who says that the more complex structure is the more work needs to go into it.</p> <br><br>
+          <p class="fade">Well, scientists and Engineers are doing just that, by exploring the idea of self-assembling materials and robots. A complexity group at Stanford University are experimenting with self-assembling Wires, by applying a large voltage to a bunch of ball bearings and castor oil, they've managed to get the balls to start forming chains. As they try to reach the outside of the dish.</p> <br>
+          <div class="flowcontent flow">
+            <video autoplay="autoplay" poster="complexityGroup.webm" loop="" muted="">
+              <source src="complexityGroup.webm" type="video/mp4"/>
+            </video>
+            <div class="caption right">
+              <h2>Self-Assembling Wires</h2>
+              <p>by Stanford complexity group</p>
+            </div>
+          </div>
+          <h2 class="fade">Origami Robot</h2>
+          <p class="fade">A research group from MIT are creating self-assembling origami robots, triggered by heat. They can then be controlled remotely by a person. That's pretty cool!</p> <br>
+          <div class="flowcontent flow">
+            <video autoplay="autoplay" poster="mitRobot.webm" loop="" muted="">
+              <source src="mitRobot.webm" type="video/mp4"/>
+            </video>
+            <div class="caption">
+              <h2>Origami Robot</h2>
+              <p>by MIT and TU Munich, was presented at ICRA 2015 in Seattle.</p>
+            </div>
+          </div>
+          <h2> <br> Self-Assembling Cubes</h2>
+          <p class="fade">Then there are these self-assembling cubes being developed by the Swiss Institute of Technology Lausanne, and they can flat-out be programmed to assemble into a variety of structures.</p> <br>
+          <div class="flowcontent flow">
+            <video autoplay="autoplay" poster="roomBots.webm" loop="" muted="">
+              <source src="roomBots.webm" type="video/mp4"/>
+            </video>
+            <div class="caption right">
+              <h2>Roombots</h2>
+              <p>by Swiss Institute of Technology Lausanne</p>
+            </div>
+          </div>
+          <p class="fade">Whether uncovering Nature's Secrets or building origami robots, cellular automata are helping us understand the complexity of complexity.</p> <br><br>
+          <p class="fade">Stephen Wolfram, put it best when he said "this discovery is helping us understand the world of constructing things from dumb components". SO BEAUTIFUL!</p> <br>
+        </div>
+        <div id="content"></div>
+        <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    </section>
+    <section class="emptyFooter"></section>
+    <footer class="footer">
+      <h5> <span style="color:grey;">|| This website was created @HFK_BREMEN during the course "Always Under Construction" || ©Shahariar Bijoy </span></h5>
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script><script  src="./script.js"></script>
+
+  </body>
+</html>
