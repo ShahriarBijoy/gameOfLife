@@ -88,13 +88,13 @@ function draw() {
   }
 }
 
-// function mouseClicked() {
-//   let row = Math.floor(mouseY/height * rows);
-//   let col = Math.floor(mouseX/width * cols);
-//   if (row >= 0 && col >= 0 && row < rows && col < cols) {
-//     grid[row][col] = !grid[row][col];
-//   }
-// }
+function mouseClicked() {
+  let row = Math.floor(mouseY/height * rows);
+  let col = Math.floor(mouseX/width * cols);
+  if (row >= 0 && col >= 0 && row < rows && col < cols) {
+    grid[row][col] = !grid[row][col];
+  }
+}
 
 function mouseDragged() {
   let row = Math.floor(mouseY/height * rows);
